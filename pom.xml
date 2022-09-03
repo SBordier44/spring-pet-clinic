@@ -15,7 +15,7 @@
     </parent>
     <groupId>fr.nubox</groupId>
     <artifactId>spring-pet-clinic</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>spring-pet-clinic</name>
     <description>spring-pet-clinic</description>
     <properties>
@@ -29,6 +29,19 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <goals>
+                        <goal>install</goal>
+                    </goals>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
+
+    <scm>
+        <developerConnection>scm:git:git@github.com:SBordier44/spring-pet-clinic.git</developerConnection>
+    </scm>
 </project>
